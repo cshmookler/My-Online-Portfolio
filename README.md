@@ -6,23 +6,29 @@ A website for hosting my new online portfolio.
 ## **Build this project**
 **1.** Open a terminal window in the root directory of this project.
 
-**2.** Install the required packages
+**2.** Install the required packages.
 ```bash
-$ sudo apt install g++ cmake
+$ sudo apt install g++ cmake libssl-dev
 ```
-**3.** Create and enter the `build` directory.
+**3.** Enter the `external` directory and unzip all packages.
 ```bash
+$ cd external
+$ unzip *.zip
+```
+**4.** Exit the `external` directory, create the `build` directory, and enter it.
+```bash
+$ cd ..
 $ mkdir build && cd build
 ```
-**4.** Generate CMake build files.
+**5.** Generate CMake build files.
 ```bash
 $ cmake ..
 ```
-**5.** Build the project.
+**6.** Build the project.
 ```bash
 $ make
 ```
-**6.** Run the generated executable.
+**7.** Run the generated executable.
 ```bash
-$ ./bin/test
+$ ./bin/cs-server
 ```
