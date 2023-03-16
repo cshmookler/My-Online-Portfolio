@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+
+<head>
+    {{ ./views/global-header.html }}
+</head>
+
+<body>
+    {{ ./views/nav.html }}
+</body>
+
+</html>

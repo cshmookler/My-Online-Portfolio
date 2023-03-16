@@ -1,8 +1,11 @@
 # **My Online Portfolio**
 A website for hosting my new online portfolio.
 ## **TODO**
- * [ ] Create the index page
- * [ ] Create a backend for the index page
+ * [X] Create the index page
+ * [X] Create a backend for the index page
+ * [X] Create an html template engine
+ * [ ] Create an error handler
+ * [ ] Finish all basic pages
 ## **Build this project**
 **1.** Open a terminal window in the root directory of this project.
 
@@ -30,5 +33,5 @@ $ make
 ```
 **7.** Run the generated executable.
 ```bash
-$ ./bin/cs-server
+$ ./bin/csp
 ```

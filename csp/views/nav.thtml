@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/independant-projects">Independant Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/club-u">Club U</a>
+            </li>
+        </ul>
+    </div>
+</nav>

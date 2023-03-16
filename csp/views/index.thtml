@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ ./views/global-header.html }}
+</head>
+
+<body>
+    {{ ./views/nav.thtml }}
+    <img src="/images/touring.jpg" class="img-fluid">
+    <img src="/images/camping.jpg" class="img-fluid">
+    <img src="/images/self-portrait.jpg" class="img-fluid">
+</body>
+
+</html>
