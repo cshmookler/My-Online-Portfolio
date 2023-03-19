@@ -1,6 +1,7 @@
 #pragma once
 
 // Standard includes
+#include <string>
 #include <vector>
 
 namespace csp {
@@ -12,6 +13,20 @@ struct file_route
     const char* contentType;
 };
 
-using char_buffer = std::vector<char>;
+struct template_include
+{
+    bool type;
+    std::string payload;
+    size_t identifierStart;
+    size_t identifierEnd;
+};
+
+struct template_file
+{
+    std::string pathToFile;
+    size_t identifierStart;
+    size_t identifierEnd;
+    std::vector<template_include> includes;
+};
 
 } // csp

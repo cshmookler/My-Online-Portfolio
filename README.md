@@ -18,20 +18,12 @@ $ sudo apt install g++ cmake libssl-dev
 $ cd external
 $ unzip *.zip
 ```
-**4.** Exit the `external` directory, create the `build` directory, and enter it.
+**4.** Enter the `csp` directory and run `setup-and-build.sh`.
 ```bash
-$ cd ..
-$ mkdir build && cd build
+$ cd ../csp
+$ ./setup-and-build.sh
 ```
-**5.** Generate CMake build files.
+**5.** Run the generated executable.
 ```bash
-$ cmake ..
-```
-**6.** Build the project.
-```bash
-$ make
-```
-**7.** Run the generated executable.
-```bash
-$ ./bin/csp
+$ ./csp
 ```

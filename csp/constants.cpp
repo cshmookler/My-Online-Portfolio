@@ -18,15 +18,18 @@ const std::array<file_route, 9> ROUTES = {
       { "/images/camping.jpg", "./images/camping.jpg", "image/jpeg" } }
 };
 
-const std::string TEMPLATE_EXTENSION = ".thtml";
+const std::string PATH_TO_LOG_FILE = "./log.txt";
 
 // Template engine constants
+const std::string TEMPLATE_EXTENSION = ".thtml";
 const char TAB = '\t';
 const char NEWLINE = '\n';
-const std::string TEMPLATE_REF_START = "{{ ";
-const std::string TEMPLATE_REF_END = " }}";
-const std::string TEMPLATE_VALUE_START = "[[ ";
-const std::string TEMPLATE_VALUE_END = " ]]";
+const std::string FILE_INCLUDE_START = "{{ ";
+const std::string FILE_INCLUDE_END = " }}";
+const std::string VALUE_INCLUDE_START = "[[ ";
+const std::string VALUE_INCLUDE_END = " ]]";
+const bool FILE_INCLUDE = false;
+const bool VALUE_INCLUDE = true;
 
 // Error messages
 const char* ERR_INVALID_RANGE = "ERROR - Invalid Range";

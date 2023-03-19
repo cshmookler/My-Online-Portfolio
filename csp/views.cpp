@@ -6,7 +6,6 @@
 
 // Local includes
 #include "constants.hpp"
-#include "types.hpp"
 #include "utils.hpp"
 
 namespace csp {
@@ -31,14 +30,14 @@ void ServeFile(const httplib::Request& request,
                std::string pathToFile,
                std::string contentType)
 {
-    csp::timer timer;
-    char_buffer pageContent = LoadFile(pathToFile);
-    std::cout << "Time elapsed: "
-              << std::chrono::duration_cast<std::chrono::milliseconds>(
-                     timer.Reset())
-                     .count()
-              << std::endl;
-    response.set_content(pageContent.data(), pageContent.size(), contentType);
+    // csp::timer timer;
+    std::vector<char> page = LoadFile(pathToFile);
+    // std::cout << "Time elapsed: "
+    //   << std::chrono::duration_cast<std::chrono::milliseconds>(
+    //  timer.Reset())
+    //  .count()
+    //   << timer.Reset().count() << std::endl;
+    response.set_content(page.data(), page.size(), contentType);
 }
 
 } // namespace csp

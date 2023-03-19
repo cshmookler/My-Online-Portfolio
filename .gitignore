@@ -1,4 +1,4 @@
 /.vscode/
 /build/
+/csp/csp
 /external/cpp-httplib-0.12.1/
-/external/stb-master/

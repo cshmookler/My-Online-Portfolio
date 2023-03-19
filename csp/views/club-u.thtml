@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    {{ ./views/nav.html }}
+    {{ ./views/nav.thtml }}
 </body>
 
 </html>
