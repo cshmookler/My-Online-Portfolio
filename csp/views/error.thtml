@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+
+<head>
+    {{ ./views/global-header.html }}
+</head>
+
+<body>
+    <h1>Error 500</h1>
+</body>
+
+</html>

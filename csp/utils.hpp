@@ -2,27 +2,19 @@
 
 // Standard includes
 #include <chrono>
+#include <functional>
 #include <string>
 #include <vector>
 
+// Local includes
+#include "templates.hpp"
+
 namespace csp {
 
-std::vector<char> LoadFile(std::string& pathToFile);
+extern const std::string PATH_TO_LOG_FILE;
 
-std::vector<char> LoadTemplate(std::string& pathToFile);
-
-void OverwriteAndInsert(std::vector<char>& first,
-                        size_t firstBegin,
-                        size_t firstEnd,
-                        std::vector<char>& second,
-                        size_t secondBegin,
-                        size_t secondEnd);
-
-void OverwriteAndInsertFile(std::vector<char>& first,
-                            size_t firstBegin,
-                            size_t firstOverwriteSize,
-                            std::string pathToFile,
-                            size_t charsToRead);
+std::vector<char> LoadFile(const std::string& pathToFile,
+                           MatchIncludeValueToVariable matchFunction);
 
 class timer
 {
